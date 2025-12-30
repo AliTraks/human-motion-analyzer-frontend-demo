@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Motion AI Analyzer — IFIA</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net;">
+
+<!-- MediaPipe -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5/pose.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- CAMERA -->
+  <div class="card camera-card">
+    <div class="camera-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel">
+    <div class="card">
+      <h2>REAL-TIME BIOMECHANICAL ANALYSIS</h2>
+      <div class="small">Overall Risk</div>
+      <div class="risk-info">
+        <b id="riskText">0%</b>
+        <span id="riskLabel" class="green">Good</span>
+      </div>
+      <div class="bar"><div id="riskFill" class="fill"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="stat">ACL Injury Risk: <b id="acl">0%</b></div>
+      <div class="stat">Spine Risk: <b id="spine">0%</b></div>
+      <div class="stat">Hip Stability: <b id="hip">100%</b></div>
+      <div class="stat">Shoulder Alignment: <b id="shoulder">100%</b></div>
+    </div>
+
+<div class="card">
+  <h2>Risk Over Time</h2>
+  <canvas id="riskChart" width="400" height="150"></canvas>
+</div>
+
+
+    <div class="card">
+      <h2>Live Angles</h2>
+      <div class="small" id="angles">—</div>
+    </div>
+
+    <div class="card exercise" id="exerciseCard">
+      <h2>Corrective Exercise</h2>
+      <div id="exerciseText">—</div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

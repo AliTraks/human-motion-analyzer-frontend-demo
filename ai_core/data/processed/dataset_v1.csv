@@ -1,0 +1,5 @@
+knee_symmetry,knee_mean,knee_velocity,knee_acceleration,knee_stress,hip_symmetry,hip_mean,hip_velocity,hip_acceleration,hip_stress,ankle_symmetry,ankle_mean,ankle_velocity,ankle_acceleration,ankle_stress,total_joint_stress,global_asymmetry
+2,166.0,0.0,0.0,0.0,2,177.0,0.0,0.0,0.0,1,92.5,0.0,0.0,0.0,0.0,5
+2,164.0,0.0,0.0,0.0,2,176.0,0.0,0.0,0.0,1,91.5,0.0,0.0,0.0,0.0,5
+2,161.0,0.0,0.0,0.0,2,175.0,0.0,0.0,0.0,1,90.5,0.0,0.0,0.0,0.0,5
+2,159.0,0.0,0.0,0.0,2,174.0,0.0,0.0,0.0,1,89.5,0.0,0.0,0.0,0.0,5
