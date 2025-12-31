@@ -6,7 +6,7 @@ Real-time human motion analysis & posture evaluation.
 Frontend-only demo available for live testing. AI Core & Backend are Private.
 
 ## Live Demo
-👉 [Click here to try the demo](https://your-demo-link.vercel.app)
+👉 [Click here to try the demo](https://human-motion-analyzer-frontend-demo.vercel.app/)
 
 ## Tech Stack
 - Frontend: React / HTML / CSS / JS
